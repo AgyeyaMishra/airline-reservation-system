@@ -1,4 +1,4 @@
 # Airline Reservation System
 
-This is a personal project done for **Department of Computer Engineering, Delhi Technological University (formerly, Delhi College of Engineering)** for a course in **Programming Fundamentals in C (Course Code - CO101)**.
+This is my project done for **Delhi Technological University (formerly, Delhi College of Engineering), Faculty of Information Technology** for a beginner course in **Programming Fundamentals in C (Course Code - CO101)**.
 
