@@ -10,6 +10,7 @@ int main()
  int i;
  float tax, base, fr1, fr2, fr3;            //'base' over here denotes the base flight fare which differs for each flight
 
+//structure to store flight related information
  struct flight
  {
   int no_of_seats;
