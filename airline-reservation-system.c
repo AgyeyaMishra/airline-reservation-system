@@ -1,4 +1,4 @@
-//Airline Reservation system
+//C program for implementation of menu driven program for Airline Reservation system
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
