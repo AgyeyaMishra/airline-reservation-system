@@ -60,5 +60,3 @@ position = ftell(fp);
 ```
 
 where **position** is a ```long int```.
-
-===
