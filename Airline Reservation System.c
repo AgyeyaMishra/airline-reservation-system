@@ -1,3 +1,10 @@
+/*
+Author: Agyeya Mishra, Ayush Ranjan
+Institute: Delhi Technological University (formerly, Delhi College of Engineering)
+Language: C
+Guide: Ms. Gitanjli Bhola
+*/
+
 //C program for implementation of menu driven program for Airline Reservation system
 #include<stdio.h>
 #include<conio.h>
