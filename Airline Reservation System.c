@@ -9,6 +9,7 @@ Guide: Ms. Gitanjli Bhola
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
+
 int main()
 {
  FILE *fp, *ft;
@@ -17,7 +18,8 @@ int main()
  int i;
  float tax, base, fr1, fr2, fr3;            //'base' over here denotes the base flight fare which differs for each flight
 
-//structure to store flight related information
+
+//structure to store flight related information	
  struct flight
  {
   int no_of_seats;
@@ -46,8 +48,8 @@ int main()
   {
    printf("*");
   }
-  printf("\t 1:-> New record \n \t 2:-> List records \n \t 3:-> Modify records");
-  printf("\n \t 4:-> Change flight rates \n \t 5:-> Delete records \n \t 6:-> Exit \n");
+  printf("\t 1:-> New record \n \t 2:-> List records \n \t 3:-> Search records \n \t 4:-> Modify records");
+  printf("\n \t 5:-> Change flight rates \n \t 6:-> Delete records \n \t 7:-> Exit \n");
   for(i=0;i<80;i++)
   {
   printf("*");
@@ -110,7 +112,8 @@ int main()
 	       }
 	       break;
 
-    case '2':  while(fread(&f,recsize,1,fp)==1)
+    case '2':
+	       while(fread(&f,recsize,1,fp)==1)
 	       {
 		printf("\nFlight Code : ");
 		puts(f.fcode);
@@ -129,17 +132,31 @@ int main()
 	       rewind(fp);
 	       getch();
 	       break;
-
    case '3':   another='y';
+	       while(another=='y')
+	      {
+	       printf("\n\nEnter the name of person whose record is to be searched : ");
+	       gets(name);
+	       if((stricmp(f.name, name))!=0)
+		printf("Sorry! Record not found.\n");
+	       else if((stricmp(f.name,name))==0)
+		printf("Record found.\n");
+	       printf("Press y to search another record and n to discontinue : ");
+	       fflush(stdin);
+	       another=getche();
+	      }
+	      break;
+
+   case '4':   another='y';
 	       while(another=='y')
 	       {
 		printf("\n\nEnter the name of person whose record is to be modified : ");
 		gets(name);
-		rewind(fp);
-		if(stricmp(f.name, name)!=0)
+		if((stricmp(f.name, name))!=0)
 		 printf("Sorry! Record not found.\n");
 		else
 		{
+		 rewind(fp);
 		 while(fread(&f, recsize, 1, fp)==1)
 		 {
 		  if(stricmp(f.name, name)==0)
@@ -162,7 +179,7 @@ int main()
 	       }
 	       break;
 
-   case '4':  another='y';
+   case '5':  another='y';
 	      while(another=='y')
 	      {
 	       printf("\n\nEnter the code of the flight for which rates have to be changed : ");
@@ -190,7 +207,7 @@ int main()
 	      }
 	      break;
 
-   case '5':  another ='y';
+   case '6':  another ='y';
 	      while(another=='y')
 	     {
 	      printf("\n\nEnter name of person whose record is to be deleted : ");
@@ -218,8 +235,9 @@ int main()
 	    }
 	    break;
 
-  case '6': fclose(fp);
+  case '7': fclose(fp);
 	    exit(0);
   }
  }
 }
+
