@@ -2,7 +2,7 @@
 
 This is my project done for **Delhi Technological University (formerly, Delhi College of Engineering), Faculty of Information Technology** for a beginner course in **Programming Fundamentals in C (Course Code - CO101)**.
 
-A basic implementation of Airline Reservation System in ```C``` language using the concept of structures and data file handling.
+A basic implementation of Airline Reservation System in ```C``` language using the concept of **structures** and **data file handling**.
 
 ---
 
