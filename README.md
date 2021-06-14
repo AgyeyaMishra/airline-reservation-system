@@ -44,7 +44,7 @@ The ```fseek()``` function lets us move the pointer from one record to another. 
 fseek(fp, -recsize, SEEK_CUR);
 ```
 
-Here, **-recsize** moves the pointer back by **recsize** bytes from the current position. ```SEEK_CUR`` is a macro defined in ```stdio.h```.
+Here, **-recsize** moves the pointer back by **recsize** bytes from the current position. ```SEEK_CUR``` is a macro defined in ```stdio.h```.
 Similarly, the following ```fseek()``` would place the pointer beyond the last record in the file.
 
 ```C
@@ -60,3 +60,4 @@ position = ftell(fp);
 ```
 
 where **position** is a ```long int```.
+===
