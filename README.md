@@ -8,8 +8,6 @@ A basic implementation of Airline Reservation System in ```C``` language using t
 
 # Documentation
 
-### User Documentation
-
 **Definition** - An airline reservation system contains details about flight schedules and its flight tariffs, passenger reservations and ticket records.
 
 **Problem Statement** - The task is to create an airline reservation system which can perform the following operations:
@@ -18,8 +16,6 @@ A basic implementation of Airline Reservation System in ```C``` language using t
 3. Modify records.
 4. Change flight rates.
 5. Delete records.
-
-### Developer Documentation
 
 **Approach** - The idea is to write individual block of code for every operation. All the blocks of code are unified together to form the main program.
 
