@@ -110,8 +110,7 @@ int main()
 	       }
 	       break;
 
-    case '2':
-	       while(fread(&f,recsize,1,fp)==1)
+    case '2':  while(fread(&f,recsize,1,fp)==1)
 	       {
 		printf("\nFlight Code : ");
 		puts(f.fcode);
