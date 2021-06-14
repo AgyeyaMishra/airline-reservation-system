@@ -60,3 +60,39 @@ position = ftell(fp);
 ```
 
 where **position** is a ```long int```.
+
+## Output
+
+1. **Welcome screen**
+
+   ![image](https://user-images.githubusercontent.com/53916781/121834544-afe06900-ccec-11eb-8872-ea902c402970.png)
+
+2. **New record**
+
+   i.
+
+   ![image](https://user-images.githubusercontent.com/53916781/121834582-c4246600-ccec-11eb-8c50-8a8253ceaee3.png)
+
+   ii. 
+
+   ![image](https://user-images.githubusercontent.com/53916781/121834604-d0a8be80-ccec-11eb-8d5f-81a44b3fa5d5.png)
+
+3. **List records**
+
+   ![image](https://user-images.githubusercontent.com/53916781/121834647-e3bb8e80-ccec-11eb-8a69-1ff8965b40c7.png)
+
+4. **Search records**
+
+   ![image](https://user-images.githubusercontent.com/53916781/121834726-15345a00-cced-11eb-9813-774feca226d6.png)
+
+5. **Modify records**
+
+   ![image](https://user-images.githubusercontent.com/53916781/121834715-09489800-cced-11eb-9b0c-0f53bc685d15.png)
+
+6. **Change flight rates**
+
+   ![image](https://user-images.githubusercontent.com/53916781/121834751-2715fd00-cced-11eb-9b2a-2b7a95917c76.png)
+
+7. **Delete records**
+
+   ![image](https://user-images.githubusercontent.com/53916781/121834770-3432ec00-cced-11eb-92b6-770884d1ae3b.png)
