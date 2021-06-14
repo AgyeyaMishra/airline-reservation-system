@@ -51,7 +51,7 @@ Similarly, the following ```fseek()``` would place the pointer beyond the last r
 fseek(fp, 0, SEEK_END);
 ```
 
-In fact, **-recsize** or **0** are just the offsets that tell the compiler by how many bytes should the pointer be moved from a particular position. The third argument could be ```SEEK_END```, ```SEEK_CUR``` or ```SEEK_SET```. All these act as a reference from which the pointer should be offset. ```SEEK_END``` means move the pointer from the end of the file. ```SEEK_CUR``` means mvoe the pointer with reference to its current position and ```SEEK_SET``` means move the pointer with reference to the beginning of the file.
+In fact, **-recsize** or **0** are just the offsets that tell the compiler by how many bytes should the pointer be moved from a particular position. The third argument could be ```SEEK_END```, ```SEEK_CUR``` or ```SEEK_SET```. All these act as a reference from which the pointer should be offset. ```SEEK_END``` means move the pointer from the end of the file. ```SEEK_CUR``` means move the pointer with reference to its current position and ```SEEK_SET``` means move the pointer with reference to the beginning of the file.
 
 If we wish to know where the pointer is positioned right now, we can use he function ```ftell()```. It returns this position as a ```long int``` wich is an offset from the beginning of the file. The value returned by ```ftell()``` can be used in subsequent calls to ```fseek()```. A sample call to ftell() is shown below:
 
